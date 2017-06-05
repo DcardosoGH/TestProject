@@ -1,6 +1,6 @@
  
  
-var myCenter=new google.maps.LatLng(23.0678628,72.5648908);
+var myCenter=new google.maps.LatLng(38.8243389,-9.1926678);
 
 function initialize()
 {
