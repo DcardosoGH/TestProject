@@ -8,10 +8,14 @@
 <meta name="keywords" content="physio, physiotherapy, physiotherapist, sports injuries,HTML5,CSS3,Responsive,HTML Template,Accupuncture,massage,pilate,occupational Health"/>
 <meta name="description" content="Physio plus is clean and simple website template that have a feature like each service have a detail page and Terapist trainer page, location page and also more feature.">
 <title>Physio Plus | Physiotherapy Responsive Website Template</title>
+
 <!-- Bootstrap -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <!-- Template Style.css -->
 <link href="css/style.css" rel="stylesheet">
+
+<link href="css/animate.css" rel="stylesheet">
+<link href="css/jquery.datepick.css" rel="stylesheet">
 
 <!-- icon css -->
 <link rel="stylesheet" type="text/css" href="css/flaticon.css">
@@ -147,7 +151,7 @@
                      </ul>
                   </li>
                   <li>
-                     <a href="#">Candidaturas</a>
+                     <a href="OfertaEmprego.html">Candidaturas</a>
                      <ul>
                         <li><a href="OfertaEmprego.html">O que procuramos</a></li>
                         <li><a href="Candidatura.html">Candidatura</a></li>
@@ -174,12 +178,12 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12 page-title">
-        <h1>Missão e Valores</h1>
+        <h1>Request An Appointment</h1>
       </div>
       <div class="col-md-12"><!-- breadcrumb -->
         <ol class="breadcrumb">
           <li><a href="index.html">Home</a></li>
-          <li class="active">Missão e Valores</li>
+          <li class="active">Request An Appointment</li>
         </ol>
       </div>
       <!-- /.breadcrumb --> 
@@ -187,113 +191,110 @@
   </div>
 </div>
 <!-- /.page-header -->
-<div class="section-space">
+<div class="main-container"><!-- main-container -->
   <div class="container">
     <div class="row">
-      <div class="col-md-5 section-title">
-        <h1>Welcome to Health Clinic of Physical Health Clinic</h1>
-        <h5 class="small-title left">Who we are</h5>
-      </div>
-      <div class="col-md-7">
-        <p class="lead">Our focus on each individual with a special level of care and consideration provides a first class physiotherapy service that is above and beyond your expectations. </p>
-      </div>
-    </div>
-    <div class="row about-block">
-      <div class="col-md-6 about-pic"> <img src="images/about-pic.jpg" alt="" class="img-responsive"> </div>
-      <div class="col-md-offset-1 col-md-5 line-left about-desc">
-        <h2>Our Approach and Values</h2>
-        <p>Our aim is to provide a gold standard physiotherapy service that is easy to access, conveniently located and delivered seamlessly.</p>
-        <p>Physiotherapy &amp; Sports Injury Clinic offer massage, and clinical Pilates in Hertfordshire. We believe that motivation and enthusiasm are essential ingredients to help you.</p>
-        <a href="#" class="btn btn-default">See our services</a> </div>
-    </div>
-  </div>
-</div>
-<div class="section-space section-color">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-5 section-title">
-        <h1>Why Choose Us?
-          Provide The best Physical Therapy</h1>
-        <h5 class="small-title left">Our mission</h5>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-4">
-        <div class="feature-block-outline">
-          <div class="flat-icon flat-icon-xs"> <i class="flaticon-share27"></i></div>
-          <h2>Excellence 
-            Research</h2>
-          <p>We have the right caring, experience and dedicated professional for you.</p>
+      <div class="col-md-8">
+        <div class="row">
+          <div class="col-md-12">
+            <p class="lead">Please complete the details below to submit your booking request.</p>
+          </div>
+          <div class="col-md-12 application-form">
+            <form method="post" action="appointment-form.php">
+              <div class="row"> 
+                <!-- Text input-->
+                <div class="col-md-6 form-group">
+                  <label class="control-label" for="fname">First Name<span class="required">*</span></label>
+                  <input id="fname" name="fname" type="text" placeholder="" class="form-control input-md" required>
+                </div>
+                <!-- Text input-->
+                <div class="col-md-6 form-group">
+                  <label class="control-label" for="lname">Last Name<span class="required">*</span></label>
+                  <input id="lname" name="lname" type="text" placeholder="" class="form-control input-md" required>
+                </div>
+                <!-- Text input-->
+                <div class="col-md-6 form-group">
+                  <label class="control-label" for="phone">Phone<span class="required">*</span></label>
+                  <input id="phone" name="phone" type="text" placeholder="" class="form-control input-md" required>
+                </div>
+                <!-- Text input-->
+                <div class="col-md-6 form-group">
+                  <label class="control-label" for="appointmentemail">E mail<span class="required">*</span></label>
+                  <input id="appointmentemail" name="appointmentemail" type="text" placeholder="" class="form-control input-md" required>
+                </div>
+                <div class="col-md-6 form-group">
+                  <label class="control-label" for="preferredday">Preferred Date <span class="required">*</span></label>
+                  <div class="input-group">
+                    <input id="preferredday" name="preferredday" type="text" placeholder="" aria-describedby="basic-addon2" class="form-control" required>
+                    <span class="input-group-addon" id="basic-addon2"><i class="fa fa-calendar"></i></span> </div>
+                </div>
+                <!-- Select Basic -->
+                <div class="col-md-6 form-group">
+                  <label class="control-label" for="timeday">Preferred Time<span class="required">*</span> </label>
+                  <select id="timeday" name="timeday" class="form-control">
+                    <option>Time</option>
+                    <option value="6:00 To 7:00">6:00 am</option>
+                    <option value="7:00 To 8:00">7:00 To 8:00</option>
+                    <option value="7:00 To 8:00">7:00 To 8:00</option>
+                  </select>
+                </div>
+                
+                <!-- Select Basic -->
+                <div class="col-md-12 form-group">
+                  <label class="control-label" for="serviceour">Services <span class="required">*</span></label>
+                  <select id="serviceour" name="serviceour" class="form-control">
+                    <option>Select Service</option>
+                    <option value="Physiotherapy">Physiotherapy</option>
+                    <option value="Diagnostics">Diagnostics</option>
+                    <option value="Massage Therapy">Massage Therapy</option>
+                    <option value="Hydrabad">Hydrabad</option>
+                    <option value="Rehabilitation">Rehabilitation</option>
+                    <option value="Acupuncture">Acupuncture</option>
+                    <option value="Geriatric">Geriatric</option>
+                    <option value="Orthopedic">Orthopedic</option>
+                    <option value="Sports Medicine">Sports Medicine</option>
+                  </select>
+                </div>
+                <!-- Textarea -->
+                <div class="col-md-12 form-group">
+                  <label class="control-label" for="message">Message</label>
+                  <textarea class="form-control" id="message" name="message" rows="9"></textarea>
+                </div>
+                <!-- Button -->
+                <div class="col-md-12 form-group">
+                  <button type="submit" id="submit" name="submit" class="btn btn-default">Submit</button>
+                  <span class="required pull-right"><small>*Required</small></span> </div>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="feature-block-outline">
-          <div class="flat-icon flat-icon-xs"> <i class="flaticon-like51"></i></div>
-          <h2>Patient Personal
-            Treatments</h2>
-          <p>We care about you and the success of your providing personalised care.</p>
+      <div class="col-md-4 sidebar">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="widget">
+              <h2>Why Physio Clinic ?</h2>
+              <p>Physio has a big goal and even bigger opportunity to empower all teams to do great things together. we're tackling new challenges daily, Join us.</p>
+              <a href="#" class="btn-link"> MEET THE TEAM</a> </div>
+          </div>
+          <div class="col-md-12">
+            <div class="widget">
+              <h2>Our Locations</h2>
+              <h3 class="small-title">Address:</h3>
+              <p>7320 Ricckvan Road, Chicago, M03 42JR, St. Zavburg, VB 5421. </p>
+              <h3 class="small-title">Email:</h3>
+              <p>info@healthcentre.com </p>
+              <h3 class="small-title">phone: </h3>
+              <p>800-123-4567 </p>
+              <a href="#" class="btn btn-default btn-sm"> view locations</a> </div>
+          </div>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="feature-block-outline">
-          <div class="flat-icon flat-icon-xs"> <i class="flaticon-circular220"></i></div>
-          <h2>Professional therapist </h2>
-          <p>We are highest levels of honesty and professionalism at all times.</p>
-        </div>
-      </div>
     </div>
   </div>
 </div>
-<div class="section-space">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-5 section-title">
-        <h1>Excellent Facility &amp; Programm
-          high quality therapy</h1>
-        <h5 class="small-title left">Our Facility</h5>
-      </div>
-      <div class="col-md-7">
-        <p class="lead">Our physiotherapists are constantly investing time and resources researching the latest treatments, We diagnose the cause and provide you with the best possible treatment plan.</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-6"><img src="images/facility-pic.jpg" alt="" class="img-responsive"></div>
-      <div class="col-md-6 facility-bg">
-        <ul class="listnone circle-right">
-          <li>Immediate appointments</li>
-          <li>Fully equipped studio</li>
-          <li>Consulting rooms - no curtained cubicles</li>
-          <li>Street parking out front or in a car park across the road</li>
-          <li>Easy access by public transport, both bus and train</li>
-          <li>Extended opening hours</li>
-          <li>Highly experienced Physiotherapists</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="section-space section-color">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-5 section-title">
-        <h1>Are you looking for a great 
-          career as a therapist? </h1>
-        <h5 class="small-title left">CAreer Opening</h5>
-      </div>
-      <div class="col-md-7">
-        <p class="lead">We have career openings for excellent staff in an organization that really values quality patient care.Our team of physiotherapists is constantly investing time in the treatment. </p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-6"><img src="images/career-about.jpg" alt="" class="img-responsive"></div>
-      <div class="col-md-offset-1 col-md-5 line-left career-desc">
-        <h2>Careers at the Physio Centres.</h2>
-        <p>We are a motivated, dedicated &amp; experienced  physiotherapy team with friendly service staff.</p>
-        <p>Donec dapibus ex vitae felis scelerisque laorurabitur lorem  maximus interdum elit eget vehicula. Phasellus enim dolor, sit facilisis eget cursus idviverra eu ma id soles dia pretium liber auctifend ac erat. </p>
-        <a href="#" class="btn btn-default hvr-sweep-to-right">view current openings</a> </div>
-    </div>
-  </div>
-</div>
+<!-- /.main-container -->
+
 <div class="footer"><!-- footer -->
   <div class="container">
     <div class="row">
@@ -380,12 +381,16 @@
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
 <!-- Include all compiled plugins (below), or include individual files as needed --> 
-<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap.min.js"></script> 
 <!-- script Header --> 
-<script type="text/javascript" src="js/script.js"></script> 
+<script type="text/javascript" src="js/script.js"></script>
 <!-- sticky Header --> 
 <script type="text/javascript" src="js/jquery.sticky.js"></script> 
 <script type="text/javascript" src="js/sticky-header.js"></script> 
+  
+<script src="js/jquery.plugin.js" type="text/javascript"></script> 
+<script type="text/javascript" src="js/jquery.datepick.js"></script> 
+<script type="text/javascript" src="js/calender.js"></script> 
 
 </body>
 </html>

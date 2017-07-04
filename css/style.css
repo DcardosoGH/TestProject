@@ -438,7 +438,7 @@ span.meta-line {
 }
 /*** page header ***/
 .page-header {
-	background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),  rgba(0,0,0,0.75) url(../images/page-header.jpg) no-repeat center;
+	background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),  rgba(0,0,0,0.75) url(../images/Our-mission-and-values.jpg) no-repeat center;
 	background-size: cover;
 	color: #fff;
 	margin: 0;
